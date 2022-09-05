@@ -1,0 +1,8 @@
+---
+- name: installing packages
+  hosts: webservers
+  become: true
+  tasks:
+  - name: installing telnet
+    yum: name=telnet state=installed
+...
